@@ -1,0 +1,8 @@
+{
+  "task": "Support case-insensitive Unicode search in the toy project",
+  "decisions": ["Use Python's standard library and keep processing offline"],
+  "failed_attempts": ["ASCII-only lowercasing does not handle German sharp S"],
+  "tests_passed": [],
+  "known_issues": ["The toy search currently compares strings exactly"],
+  "next_steps": ["Use casefold for matching", "Add Unicode regression tests"]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "20261021T153537806106Z-7ab126f7283d",
+  "created_at": "2026-10-21T15:35:37.806106+00:00",
+  "project_name": "toy-project",
+  "notes_source": "user-reported",
+  "notes": {
+    "task": "Support case-insensitive Unicode search in the toy project",
+    "decisions": [
+      "Use Python's standard library and keep processing offline"
+    ],
+    "failed_attempts": [
+      "ASCII-only lowercasing does not handle German sharp S"
+    ],
+    "tests_passed": [],
+    "known_issues": [
+      "The toy search currently compares strings exactly"
+    ],
+    "next_steps": [
+      "Use casefold for matching",
+      "Add Unicode regression tests"
+    ]
+  },
+  "git": {
+    "available": false,
+    "reason": "not_repository",
+    "branch": null,
+    "head": null,
+    "dirty": null,
+    "files": [],
+    "recent_commits": [],
+    "omitted_sensitive_paths": 0,
+    "status_accuracy": "metadata-only"
+  }
+}
